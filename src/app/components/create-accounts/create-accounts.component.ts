@@ -36,6 +36,7 @@ addUser(s){
 
 clearField(){
    this.cos= ' '
+   console.warn("dasda")
 }
 
 }
