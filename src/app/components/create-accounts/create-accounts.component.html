@@ -1,0 +1,6 @@
+<div class="box" [ngClass]="{boxGreen: boxColor=='green',boxRed:boxColor=='red'}">
+
+    <input type="text" placeholder="{{placeholderText}}" #iVal [value]="cos" />
+    <button (click)="addUser(iVal)" (onclick)="clearField()">Create</button>
+
+</div>
