@@ -35,7 +35,7 @@ addUser(s){
 }
 
 clearField(){
-   this.cos= ' '
+   this.cos= ''
 }
 
 }
