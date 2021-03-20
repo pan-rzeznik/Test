@@ -25,7 +25,7 @@ placeholderText;
 inputEvent = new EventEmitter
 
 @Input()
-cos='sdsdsd';
+valueAccount='sd';
 
 addUser(s){
   if(s.value.length>0){
@@ -35,7 +35,7 @@ addUser(s){
 }
 
 clearField(){
-   this.cos= ' '
+   this.valueAccount= ' '
    console.warn("dasda")
 }
 
