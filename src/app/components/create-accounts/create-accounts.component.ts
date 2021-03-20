@@ -5,15 +5,7 @@ import { Component, Input, OnInit, Output, EventEmitter} from '@angular/core';
   templateUrl: './create-accounts.component.html',
   styleUrls: ['./create-accounts.component.scss']
 })
-export class CreateAccountsComponent implements OnInit {
-
-
-
-  
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+export class CreateAccountsComponent  {
 
  @Input()
 boxColor;
@@ -32,9 +24,11 @@ addUser(s){
   // alert(s.value)
   this.inputEvent.emit(s.value)
   }
+
+  this.clearField();
 }
 
-clearField(){
+private clearField(){
    this.valueAccount= ' '
    console.warn("dasda")
 }

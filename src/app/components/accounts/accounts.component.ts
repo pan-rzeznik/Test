@@ -6,17 +6,10 @@ import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
   templateUrl: './accounts.component.html',
   styleUrls: ['./accounts.component.scss']
 })
-export class AccountsComponent implements OnInit {
+export class AccountsComponent {
   count: any;
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-users =[];
-admins =[];
-
+  users =[];
+  admins =[];
 
   pushUsers(data){
     if((!this.users.includes(data)) && (!this.admins.includes(data))){
@@ -26,8 +19,8 @@ admins =[];
     }
   }
 
-  removeItemUsers(item){
-    this.users.splice(item,1)
+  removeItemUsers(itemIndex: number){
+    this.users.splice(itemIndex,1)
 
   }
 
@@ -48,8 +41,8 @@ admins =[];
     }
   }
  
-  removeItemAdmins(item){
-    this.admins.splice(item,1)
+  removeItemAdmins(itemIndex: number){
+    this.admins.splice(itemIndex,1)
 
   }
 
@@ -62,14 +55,7 @@ admins =[];
   }
 
 
-  @Input()
-  adminow(){
-    return(this.admins.length)
-  }
-  @Input()
-  userow(){
-    return(this.users.length)
-  }
+ 
 
 }
 
